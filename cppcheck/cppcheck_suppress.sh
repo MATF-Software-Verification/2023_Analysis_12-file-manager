@@ -1,0 +1,1 @@
+cppcheck --enable=all --suppress=missingInclude --output-file="cppcheck_suppress.txt" ./../12-file-manager/FileManager/sources/

@@ -1,0 +1,200 @@
+[1m../12-file-manager/FileManager/sources/clipboard.cpp:1:0: [31minformation:[39m Include file: "headers/clipboard.h" not found. [missingInclude][0m
+#include "headers/clipboard.h"
+^
+[1m../12-file-manager/FileManager/sources/connectiondialog.cpp:1:0: [31minformation:[39m Include file: "headers/connectiondialog.h" not found. [missingInclude][0m
+#include "headers/connectiondialog.h"
+^
+[1m../12-file-manager/FileManager/sources/connectiondialog.cpp:2:0: [31minformation:[39m Include file: "ui_connectiondialog.h" not found. [missingInclude][0m
+#include "ui_connectiondialog.h"
+^
+[1m../12-file-manager/FileManager/sources/connectiondialog.cpp:3:0: [31minformation:[39m Include file: "headers/ftp_manager.h" not found. [missingInclude][0m
+#include "headers/ftp_manager.h"
+^
+[1m../12-file-manager/FileManager/sources/contextmenu.cpp:1:0: [31minformation:[39m Include file: "headers/contextmenu.h" not found. [missingInclude][0m
+#include "headers/contextmenu.h"
+^
+[1m../12-file-manager/FileManager/sources/contextmenu.cpp:2:0: [31minformation:[39m Include file: "headers/propertiesdialog.h" not found. [missingInclude][0m
+#include "headers/propertiesdialog.h"
+^
+[1m../12-file-manager/FileManager/sources/contextmenu.cpp:3:0: [31minformation:[39m Include file: <QDebug> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem][0m
+#include <QDebug>
+^
+[1m../12-file-manager/FileManager/sources/contextmenu.cpp:4:0: [31minformation:[39m Include file: "headers/mainwindow.h" not found. [missingInclude][0m
+#include "headers/mainwindow.h"
+^
+[1m../12-file-manager/FileManager/sources/contextmenu.cpp:334:23: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+    auto mainWindow = (MainWindow *) m_parent->getParent();
+                      ^
+[1m../12-file-manager/FileManager/sources/contextmenu.cpp:340:23: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+    auto mainWindow = (MainWindow *) m_parent->getParent();
+                      ^
+[1m../12-file-manager/FileManager/sources/contextmenu.cpp:346:23: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+    auto mainWindow = (MainWindow *) m_parent->getParent();
+                      ^
+[1m../12-file-manager/FileManager/sources/contextmenu.cpp:352:23: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+    auto mainWindow = (MainWindow *) m_parent->getParent();
+                      ^
+[1m../12-file-manager/FileManager/sources/contextmenu.cpp:382:23: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+    auto mainWindow = (MainWindow *) m_parent->getParent();
+                      ^
+[1m../12-file-manager/FileManager/sources/contextmenu.cpp:388:23: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+    auto mainWindow = (MainWindow *) m_parent->getParent();
+                      ^
+[1m../12-file-manager/FileManager/sources/contextmenu.cpp:395:23: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+    auto mainWindow = (MainWindow *) m_parent->getParent();
+                      ^
+[1m../12-file-manager/FileManager/sources/file.cpp:1:0: [31minformation:[39m Include file: "headers/file.h" not found. [missingInclude][0m
+#include "headers/file.h"
+^
+[1m../12-file-manager/FileManager/sources/file.cpp:3:0: [31minformation:[39m Include file: <QDebug> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem][0m
+#include <QDebug>
+^
+[1m../12-file-manager/FileManager/sources/file.cpp:4:0: [31minformation:[39m Include file: <QDesktopServices> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem][0m
+#include <QDesktopServices>
+^
+[1m../12-file-manager/FileManager/sources/filesystemmodel.cpp:1:0: [31minformation:[39m Include file: "headers/filesystemmodel.h" not found. [missingInclude][0m
+#include "headers/filesystemmodel.h"
+^
+[1m../12-file-manager/FileManager/sources/filesystemmodel.cpp:2:0: [31minformation:[39m Include file: "headers/mainwindow.h" not found. [missingInclude][0m
+#include "headers/mainwindow.h"
+^
+[1m../12-file-manager/FileManager/sources/filesystemmodel.cpp:4:0: [31minformation:[39m Include file: <QDebug> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem][0m
+#include <QDebug>
+^
+[1m../12-file-manager/FileManager/sources/filesystemmodel.cpp:99:34: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+            QMessageBox::warning((QWidget*)m_parent, "Warning", "Access denied - no permission to write!");
+                                 ^
+[1m../12-file-manager/FileManager/sources/filesystemmodel.cpp:113:51: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+                overwrite = QMessageBox::question((QWidget*)m_parent, "Overwrite",
+                                                  ^
+[1m../12-file-manager/FileManager/sources/filesystemmodel.cpp:157:30: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+        QMessageBox::warning((QWidget*)m_parent, "Error", "Failed to move file " + file->fileName());
+                             ^
+[1m../12-file-manager/FileManager/sources/filesystemmodel.cpp:170:34: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+            QMessageBox::warning((QWidget*)m_parent, "Error", "Failed to copy directory " + fi.absoluteFilePath());
+                                 ^
+[1m../12-file-manager/FileManager/sources/filesystemmodel.cpp:176:30: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+        QMessageBox::warning((QWidget*)m_parent, "Error", "Failed to copy file " + file->fileName());
+                             ^
+[1m../12-file-manager/FileManager/sources/filesystemmodel.cpp:186:30: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+        QMessageBox::warning((QWidget*)m_parent, "Error", "Overwrite: failed to remove file " + path);
+                             ^
+[1m../12-file-manager/FileManager/sources/ftp_manager.cpp:1:0: [31minformation:[39m Include file: "headers/ftp_manager.h" not found. [missingInclude][0m
+#include "headers/ftp_manager.h"
+^
+[1m../12-file-manager/FileManager/sources/ftp_manager.cpp:2:0: [31minformation:[39m Include file: "ui_ftp_manager.h" not found. [missingInclude][0m
+#include "ui_ftp_manager.h"
+^
+[1m../12-file-manager/FileManager/sources/ftp_manager.cpp:3:0: [31minformation:[39m Include file: <QDebug> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem][0m
+#include <QDebug>
+^
+[1m../12-file-manager/FileManager/sources/http_client.cpp:1:0: [31minformation:[39m Include file: "headers/http_client.h" not found. [missingInclude][0m
+#include "headers/http_client.h"
+^
+[1m../12-file-manager/FileManager/sources/http_client.cpp:2:0: [31minformation:[39m Include file: "ui_http_client.h" not found. [missingInclude][0m
+#include "ui_http_client.h"
+^
+[1m../12-file-manager/FileManager/sources/http_client.cpp:4:0: [31minformation:[39m Include file: <QtWidgets> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem][0m
+#include <QtWidgets>
+^
+[1m../12-file-manager/FileManager/sources/http_client.cpp:5:0: [31minformation:[39m Include file: <QtNetwork> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem][0m
+#include <QtNetwork>
+^
+[1m../12-file-manager/FileManager/sources/http_client.cpp:6:0: [31minformation:[39m Include file: <QUrl> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem][0m
+#include <QUrl>
+^
+[1m../12-file-manager/FileManager/sources/main.cpp:1:0: [31minformation:[39m Include file: "headers/mainwindow.h" not found. [missingInclude][0m
+#include "headers/mainwindow.h"
+^
+[1m../12-file-manager/FileManager/sources/main.cpp:3:0: [31minformation:[39m Include file: <QApplication> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem][0m
+#include <QApplication>s
+^
+[1m../12-file-manager/FileManager/sources/mainwindow.cpp:1:0: [31minformation:[39m Include file: "headers/mainwindow.h" not found. [missingInclude][0m
+#include "headers/mainwindow.h"
+^
+[1m../12-file-manager/FileManager/sources/mainwindow.cpp:2:0: [31minformation:[39m Include file: "ui_mainwindow.h" not found. [missingInclude][0m
+#include "ui_mainwindow.h"
+^
+[1m../12-file-manager/FileManager/sources/mainwindow.cpp:3:0: [31minformation:[39m Include file: "headers/connectiondialog.h" not found. [missingInclude][0m
+#include "headers/connectiondialog.h"
+^
+[1m../12-file-manager/FileManager/sources/mainwindow.cpp:4:0: [31minformation:[39m Include file: "headers/filesystemmodel.h" not found. [missingInclude][0m
+#include "headers/filesystemmodel.h"
+^
+[1m../12-file-manager/FileManager/sources/mainwindow.cpp:6:0: [31minformation:[39m Include file: <QDebug> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem][0m
+#include <QDebug>
+^
+[1m../12-file-manager/FileManager/sources/preview.cpp:1:0: [31minformation:[39m Include file: "headers/preview.h" not found. [missingInclude][0m
+#include "headers/preview.h"
+^
+[1m../12-file-manager/FileManager/sources/preview.cpp:2:0: [31minformation:[39m Include file: "headers/selectedfileslist.h" not found. [missingInclude][0m
+#include "headers/selectedfileslist.h"
+^
+[1m../12-file-manager/FileManager/sources/preview.cpp:3:0: [31minformation:[39m Include file: <QDebug> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem][0m
+#include <QDebug>
+^
+[1m../12-file-manager/FileManager/sources/preview.cpp:66:9: [31mstyle:[39m The scope of the variable 'm' can be reduced. [variableScope][0m
+    int m;
+        ^
+[1m../12-file-manager/FileManager/sources/preview.cpp:107:9: [31mstyle:[39m The scope of the variable 'n' can be reduced. [variableScope][0m
+    int n;
+        ^
+[1m../12-file-manager/FileManager/sources/preview.cpp:69:44: [31mperformance:[39m Prefer prefix ++/-- operators for non-primitive types. [postfixOperator][0m
+    for(i=extMap2.begin();i!=extMap2.end();i++){
+                                           ^
+[1m../12-file-manager/FileManager/sources/preview.cpp:83:42: [31mperformance:[39m Prefer prefix ++/-- operators for non-primitive types. [postfixOperator][0m
+    for(i=extMap.begin();i!=extMap.end();i++){
+                                         ^
+[1m../12-file-manager/FileManager/sources/propertiesdialog.cpp:1:0: [31minformation:[39m Include file: "headers/propertiesdialog.h" not found. [missingInclude][0m
+#include "headers/propertiesdialog.h"
+^
+[1m../12-file-manager/FileManager/sources/propertiesdialog.cpp:2:0: [31minformation:[39m Include file: "ui_propertiesdialog.h" not found. [missingInclude][0m
+#include "ui_propertiesdialog.h"
+^
+[1m../12-file-manager/FileManager/sources/propertiesdialog.cpp:3:0: [31minformation:[39m Include file: "headers/preview.h" not found. [missingInclude][0m
+#include "headers/preview.h"
+^
+[1m../12-file-manager/FileManager/sources/propertiesdialog.cpp:5:0: [31minformation:[39m Include file: <QMessageBox> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem][0m
+#include <QMessageBox>
+^
+[1m../12-file-manager/FileManager/sources/selectedfileslist.cpp:1:0: [31minformation:[39m Include file: "headers/selectedfileslist.h" not found. [missingInclude][0m
+#include "headers/selectedfileslist.h"
+^
+[1m../12-file-manager/FileManager/sources/selectedfileslist.cpp:2:0: [31minformation:[39m Include file: "headers/propertiesdialog.h" not found. [missingInclude][0m
+#include "headers/propertiesdialog.h"
+^
+[1m../12-file-manager/FileManager/sources/selectedfileslist.cpp:3:0: [31minformation:[39m Include file: "headers/contextmenu.h" not found. [missingInclude][0m
+#include "headers/contextmenu.h"
+^
+[1m../12-file-manager/FileManager/sources/selectedfileslist.cpp:5:0: [31minformation:[39m Include file: <quazip.h> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem][0m
+#include <quazip.h>
+^
+[1m../12-file-manager/FileManager/sources/selectedfileslist.cpp:6:0: [31minformation:[39m Include file: "JlCompress.h" not found. [missingInclude][0m
+#include "JlCompress.h"
+^
+[1m../12-file-manager/FileManager/sources/selectedfileslist.cpp:7:0: [31minformation:[39m Include file: <QDebug> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem][0m
+#include <QDebug>
+^
+[1m../12-file-manager/FileManager/sources/selectedfileslist.cpp:8:0: [31minformation:[39m Include file: <QMessageBox> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem][0m
+#include <QMessageBox>
+^
+[1m../12-file-manager/FileManager/sources/selectedfileslist.cpp:9:0: [31minformation:[39m Include file: <QInputDialog> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem][0m
+#include <QInputDialog>
+^
+[1m../12-file-manager/FileManager/sources/window.cpp:1:0: [31minformation:[39m Include file: "headers/window.h" not found. [missingInclude][0m
+#include "headers/window.h"
+^
+[1m../12-file-manager/FileManager/sources/window.cpp:2:0: [31minformation:[39m Include file: "headers/file.h" not found. [missingInclude][0m
+#include "headers/file.h"
+^
+[1m../12-file-manager/FileManager/sources/window.cpp:3:0: [31minformation:[39m Include file: "headers/contextmenu.h" not found. [missingInclude][0m
+#include "headers/contextmenu.h"
+^
+[1m../12-file-manager/FileManager/sources/window.cpp:4:0: [31minformation:[39m Include file: "headers/mainwindow.h" not found. [missingInclude][0m
+#include "headers/mainwindow.h"
+^
+[1m../12-file-manager/FileManager/sources/window.cpp:178:23: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+    auto mainWindow = (MainWindow *) getParent();
+                      ^
+[1mnofile:0:0: [31minformation:[39m Active checkers: 161/592 (use --checkers-report=<filename> to see details) [checkersReport][0m
+

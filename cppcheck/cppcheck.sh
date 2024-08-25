@@ -1,0 +1,1 @@
+cppcheck --enable=all --output-file="cppcheck.txt" ./../12-file-manager/FileManager/sources/
