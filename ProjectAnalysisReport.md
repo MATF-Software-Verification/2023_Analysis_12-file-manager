@@ -69,7 +69,7 @@ Ovaj alat je integrisan u QtCreator-u i može se pokrenuti sa podrazumevanim (de
   - --leak-check=full -> aktivira potpunu proveru curenja memorije
   - --log-file="memcheck.txt" -> fajl gde se upisuju rezultati analize
  
-  Analiza projekta se može pokrenuti pomocu ove [skripte](valgrind/memcheck/memcheck.sh):
+  Analiza se može pokrenuti pomocu ove [skripte](valgrind/memcheck/memcheck.sh):
   ```
   ./memcheck.sh
   ```
@@ -98,6 +98,11 @@ Ovaj alat je integrisan u QtCreator-u i može se pokrenuti sa podrazumevanim (de
   ```
   valgrind --tool=massif ./FileManager
   ```
+
+  Analiza se može pokrenuti pomocu ove [skripte](valgrind/massif/massif.sh):
+  ```
+  ./massif.sh
+  ```
   Rezultat je upisan u fajl [massif.out.*](valgrinf/massif/massif.12555), a pomoću komande ms_print se upisuju rezultati u [massif.txt](valgrind/massif/massif.txt) koji su čitljivi.
   ```
   ms_print massif.out.12555 > massif.txt
@@ -108,5 +113,26 @@ Ovaj alat je integrisan u QtCreator-u i može se pokrenuti sa podrazumevanim (de
 
   Sa grafa se može videti da je najveća potrošnja memorije u 67. preseku i da je to 7.1 MB. Iz ovoga se može zaključiti da postoji curenje memrije, ali ono nije veliko.
 
+  ## Cppcheck
+
+  Cppcheck je alat za statičku analizu koda usmeren na C i C++ programske jezike. Njegov cilj je otkrivanje grešaka, potencijalnih problema i nepravilnosti u kodu koji se ne mogu uvek prepoznati kroz uobičajeno kompajliranje.
+
+  Cppcheck se instalira pomoću komande:
+  ```
+  sudo apt-get install cppcheck
+  ```
+
+  Poziva se pomoću komande:
+  ```
+  cppcheck --enable=all --output-file="cppcheck.txt" FileManager
+  ```
+  Opcije koje su uključene prilikom analize:
+  - --enable=all - omogućava sve dostupne provere
+  - --output-file="cppcheck.txt" - rezultati analize će biti upisani u fajl cppcheck.txt
+  A može se pokrenuti i pomoću ove [skripte](cppcheck/cppcheck.sh)
+  ```
+  ./cppcheck.sh
+  ```
   
+  Dobijeni rezultati se nalaze u fajlu [cppcheck.txt](cppcheck/cppcheck.txt)
 
