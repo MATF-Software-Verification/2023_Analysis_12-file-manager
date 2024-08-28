@@ -111,8 +111,18 @@ Ovaj alat je integrisan u QtCreator-u i može se pokrenuti sa podrazumevanim (de
   
   ![img](valgrind/massif/massif_2.png)
 
-  Sa grafa se može videti da je najveća potrošnja memorije u 67. preseku i da je to 7.1 MB. Iz ovoga se može zaključiti da postoji curenje memrije, ali ono nije veliko.
+  Sa grafa se može videti da je najveća potrošnja memorije u 67. preseku i da je to 7.1 MB. Iz ovoga se može zaključiti da postoji curenje memorije, ali ono nije veliko.
 
+  Osim za analizu heap memorije, massif se može koristiti i za merenje zauzeća memorije na steku. U tom slučaju se poziva sledećom komandom:
+   ```
+   valgrind --tool=massif --stacks=yes ./FileManager
+   ```
+  Dobijeni graf izgleda ovako: 
+  
+  ![img](valgrind/massif/massif_stacks_2.png)
+
+  Sa grafa se može videti da je najveća potrošnja memorije u 43. preseku i da je to 7.1 MB.
+  
   ## Cppcheck
 
   Cppcheck je alat za statičku analizu koda usmeren na C i C++ programske jezike. Njegov cilj je otkrivanje grešaka, potencijalnih problema i nepravilnosti u kodu koji se ne mogu uvek prepoznati kroz uobičajeno kompajliranje.
@@ -136,6 +146,15 @@ Ovaj alat je integrisan u QtCreator-u i može se pokrenuti sa podrazumevanim (de
   
   Dobijeni rezultati se nalaze u fajlu [cppcheck.txt](cppcheck/cppcheck.txt)
 
+  Pokretanje [skripte](cppcheck/cppcheck_suppress.sh) se pokreće sledeća komanda:
+  
+  ```
+  cppcheck --enable=all --suppress=missingInclude --output-file="cppcheck_suppress.txt" FileManager
+  ```
+
+  Korišćenjem opcije "--suppress=missingInclude" cppcheck će zanemariti sve poruke koje ukazuju na nedostatak potrebnih uključivanja datoteka (header files).
+
+  Dobijeni rezultati sa ovom opcijom se nalaze u fajlu [cppcheck_suppress.txt](cppcheck/cppcheck_suppress.txt)
   ## Flawfinder
 
   Flawfinder je alat za statičku analizu koda namenjen za otkrivanje sigurnosnih ranjivosti i grešaka u C i C++ programima. Razvijen je za identifikaciju potencijalnih sigurnosnih problema u kodu koji mogu biti iskorišćeni od strane napadača. Svakom propustu se dodeljuje određeni nivo značajnosti. 
