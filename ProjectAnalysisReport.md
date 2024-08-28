@@ -38,7 +38,7 @@ Ovaj alat je integrisan u QtCreator-u i može se pokrenuti sa podrazumevanim (de
   - Default konfiguracija podrazumeva dva nivoa provere nivo 0 i nivo 1.
  
   - Custom konfiguracija se može napraviti tako što se iz menu bar-a izabere Edit i odabere Preferences. Kada se otvori novi prozor izabere se Analyzer i stisne Default Clang-tidy and Clazy checks.  Napravi se nova konfiguracija i promeni se ime, u mom slučaju Custom Clang-tidy. Izabere se kartica Clazy checks i izaberu se nivoi sa kojima će se raditi analiza. Ja sam u svom projektu koristio default konfiguraciju.
-    ![img](clang/clazy/clazy_3.png)
+    ![img](clang/clazy/clazy_4.png)
 
   ## Valgrind
   Valgrind je alat za analizu i otkrivanje grešaka u upravljanju memorijom u programima. Pomaže u identifikaciji problema kao što su curenje memorije, neinicijalizovana memorija, i pogrešna upotreba pokazivača.
