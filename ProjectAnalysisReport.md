@@ -103,7 +103,7 @@ Ovaj alat je integrisan u QtCreator-u i može se pokrenuti sa podrazumevanim (de
   ```
   ./massif.sh
   ```
-  Rezultat je upisan u fajl [massif.out.*](valgrinf/massif/massif.out.12555), a pomoću komande ms_print se upisuju rezultati u [massif.txt](valgrind/massif/massif.txt) koji su čitljivi.
+  Rezultat je upisan u fajl [massif.out.12555](valgrind/massif/massif.out.12555), a pomoću komande ms_print se upisuju rezultati u [massif.txt](valgrind/massif/massif.txt) koji su čitljivi.
   ```
   ms_print massif.out.12555 > massif.txt
   ```
