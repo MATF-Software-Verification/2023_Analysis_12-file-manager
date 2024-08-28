@@ -136,3 +136,31 @@ Ovaj alat je integrisan u QtCreator-u i može se pokrenuti sa podrazumevanim (de
   
   Dobijeni rezultati se nalaze u fajlu [cppcheck.txt](cppcheck/cppcheck.txt)
 
+  ## Flawfinder
+
+  Flawfinder je alat za statičku analizu koda namenjen za otkrivanje sigurnosnih ranjivosti i grešaka u C i C++ programima. Razvijen je za identifikaciju potencijalnih sigurnosnih problema u kodu koji mogu biti iskorišćeni od strane napadača. Svakom propustu se dodeljuje određeni nivo značajnosti. 
+
+  Flawfinder se instalira pomoću komande:
+  ```
+  sudo apt-get install flawfinder
+  ```
+
+  Poziva se pomoću komande:
+  ```
+  flawfinder --html FileManager/ > flawfinder.html
+  ```
+
+  Opcija --html odredjuje da je izveštaj napisan u html formatu.
+
+  Analiza se može pokrenuti pomoću ove [skripte](flawfinder/flawfinder.sh)
+  ```
+  ./flawfinder.sh
+  ```
+
+  Rezultati dobijeni primenom alata Flawfinder se nalaze u fajlu [flawfinder.html](flawfinder/flawfinder.html).
+  Rezultati su rangirani po ozbiljnosti, gde veći broj označava da je problem ozbiljniji po pitanju sigurnosti. Analizom smo nasli samo dva problema nivoa 3, ostali su nivoa 2 ili 1. Pored nivoa ozbiljnosti greške u izveštaju se nalaze naziv datoteke, broj linije, kategorija problema, opis problema i kontekst koda.
+
+  Kodove koji se nalaze u dobijenom izveštaju su:
+  - CWE-327: označava upotrebu zastarelog ili nesigurnog kriptografskog algoritma
+  - CWE-119/CWE-120: označava situaciju gde se podaci kopiraju u bafer bez provere veličine ulaza
+  - CWE-362: odnosi se na probleme koji nastaju kada se resursi dele između više izvršnih niti ili procesa bez odgovarajuće sinhronizacije
